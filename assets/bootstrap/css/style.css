@@ -228,9 +228,109 @@ section {
 
 /* ICONOS */
 
-.iconos-redes .icono-insta {
-  margin-right: 1rem;
+.iconos-redes {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 15px !important;
+  align-items: center !important;
+  margin-top: 20px;
 }
 
+.iconos-redes a {
+  display: inline-block !important;
+}
+
+.iconos-redes img {
+  display: block !important;
+  width: 36px;
+  height: 36px;
+}
+
+.icono-insta, .icono-correo {
+  width: 70px;
+  height: 70px;
+}
+
+/* ========================================
+   AGREGAR ESTO AL FINAL DE TU <style>
+   ======================================== */
+
+/* TABLETS Y PANTALLAS MEDIANAS */
+@media (max-width: 768px) {
+  
+  /* Sección Hero */
+  .sudaderas-infor {
+    height: 50vh !important;
+  }
+  
+  .sudaderas-infor a {
+    position: static !important;
+    transform: none !important;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  /* Sección Call to Action */
+  .call-action {
+    height: auto !important;
+    min-height: 500px;
+    padding: 2rem 1rem;
+  }
+  
+  .call-action > div:first-child {
+    position: static !important;
+    margin-bottom: 2rem;
+  }
+  
+  .call-action > div:first-child div {
+    white-space: normal !important;
+    margin-left: 0 !important;
+  }
+  
+  .call-action .imagen {
+    position: static !important;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  
+  /* Sección Escritorio */
+  .escritorio {
+    height: auto !important;
+    min-height: 500px;
+    padding: 3rem 1rem;
+  }
+  
+  .texto-esc {
+    max-width: 100%;
+  }
+}
+
+/* MÓVILES PEQUEÑOS */
+@media (max-width: 480px) {
+  
+  /* Sección Hero */
+  .sudaderas-infor {
+    height: 40vh !important;
+  }
+  
+  .sudaderas-infor a {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Call to Action - ajustar texto */
+  .call-action > div:first-child div {
+    font-size: clamp(30px, 10vw, 60px) !important;
+    letter-spacing: 2px !important;
+  }
+  
+  /* Escritorio */
+  .escritorio {
+    min-height: 400px;
+    padding: 2rem 1rem;
+  }
+}
 
 
